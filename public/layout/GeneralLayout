@@ -1,0 +1,19 @@
+<div>
+    <!-- NAVBAR -->
+    <nav include-html="./components/navigation/Navbar"></nav>
+
+    <!-- MOBILE -->
+    <div include-html="./components/navigation/MobileNav"></div>
+    <div include-html="./components/navigation/MobileCategory"></div>
+
+    <!-- OVERLAY BUAT MENU -->
+    <div class="black-overlay" onclick="toggleMobileNav()"></div>
+
+    <!-- PLACEHOLDER BUAT CONTENT -->
+    <div id="content"></div>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-white border">
+        <div class="flex items-center h-20 p-5">Test Footer</div>
+    </footer>
+</div>

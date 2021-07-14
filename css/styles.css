@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-tg-black;
+}
+
+.lc-1l {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.lc-2l {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.lc-3l {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.responsive {
+  @apply w-full mx-auto px-5 max-w-lg md:px-10 lg:px-0 sm:px-0 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl ;
+}
+
+.input {
+  @apply w-full h-10 px-3 border rounded-md focus:outline-none focus:border-gray-500 text-sm;
+}
+
+.link-text-primary {
+  @apply hover:text-tg-red-600 transition duration-300;
+}
+
+/* NAVIGATION */
+#MobileNav {
+  @apply fixed top-0 flex left-0 flex-col h-screen max-w-xs bg-white border overflow-x-hidden z-40 shadow-md border-tg-gray-300 overflow-y-auto;
+  width: 0;
+  transition: 0.5s;
+}
+
+/* width */
+#MobileNav::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#MobileNav::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+#MobileNav::-webkit-scrollbar-thumb {
+  @apply bg-tg-gray-400 transition duration-300 rounded-full;
+}
+
+/* Handle on hover */
+#MobileNav::-webkit-scrollbar-thumb:hover {
+  @apply bg-tg-gray-500; 
+}
+
+.left-nav-menu-container {
+  @apply border-b border-tg-gray-300; 
+}
+
+.left-nav-menu {
+  @apply flex items-center justify-between w-full py-3 px-3 font-bold cursor-pointer hover:bg-tg-gray-100 border-l-4 border-opacity-0 border-tg-red-600; 
+}
+
+.left-nav-menu-2 {
+  @apply flex items-center justify-between w-full py-2 px-3 cursor-pointer hover:bg-tg-gray-100 border-l-4 border-opacity-0 border-tg-red-600; 
+}
+
+.left-nav-menu-active {
+  @apply border-opacity-100 text-tg-red-600; 
+}
+
+
+/* END NAVIGATION */
+
+#BlackOverlay {
+  @apply fixed h-screen w-full bg-black bg-opacity-50 z-30 inset-0;
+  display: none;
+}
+
+/* ACCORDION */
+.accordion-active {
+  @apply text-tg-red-600;
+}
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* END ACCORDION */
