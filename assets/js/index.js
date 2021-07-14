@@ -20,11 +20,10 @@ const useThisScripts = () => {
 
     const leftNavMenu = document.querySelectorAll(".left-nav__menu") 
     const location = document.location.pathname;
-    console.log(location);
     
     const leftNavMenuActivator = (menu) => {
         for (let i = 0; i < menu.length; i++) {
-            if (menu[i].getAttribute("href") === location) {
+            if (menu[i].getAttribute("href") === location) {                
                 menu[i].classList.add("left-nav__menu--active")
             }
         }

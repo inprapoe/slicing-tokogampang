@@ -21,7 +21,7 @@
                     </div>                        
                 </div>
                 <div class="">
-                    <a href="./fb-ads.html" >
+                    <a href="/fb-ads.html" >
                         <button class="w-full btn btn--md btn--blue">Buat Ads</button>                        
                     </a>                   
                 </div>
@@ -42,7 +42,7 @@
             </li>
             
             <li class="left-nav">
-                <a href="./" class="left-nav__menu left-nav__menu--base">
+                <a href="/" class="left-nav__menu left-nav__menu--base">
                     <div class="left-nav__menu__title__container">
                         <svg class="nav__svg--md" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -69,7 +69,7 @@
                         <path d="M7.15801 6.175L10.9747 10L7.15801 13.825L8.33301 15L13.333 10L8.33301 5L7.15801 6.175Z" />
                     </svg>  
                 </div>   
-                <a href="./produk" class="left-nav__menu left-nav__menu--base">
+                <a href="/produk" class="left-nav__menu left-nav__menu--base">
                     <div class="left-nav__menu__title__container">
                         <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.356 5.10763C23.356 4.80315 23.1721 4.52881 22.8905 4.41308L12.2852 0.0563145C12.1024 -0.0187715 11.8974 -0.0187715 11.7145 0.0563145L1.10921 4.41308C0.82759 4.52876 0.643677 4.80315 0.643677 5.10763V18.8924C0.643677 19.1968 0.827543 19.4712 1.10921 19.5869L11.7145 23.9437C11.8954 24.018 12.0987 24.0196 12.2843 23.9436C12.2933 23.9406 11.8918 24.1053 22.8905 19.5869C23.1722 19.4712 23.356 19.1968 23.356 18.8924V5.10763ZM11.9999 8.71579L8.0922 7.1105L16.5371 3.42655L20.7061 5.13921L11.9999 8.71579ZM2.1454 6.29098L5.5168 7.67599V11.5835C5.5168 11.9981 5.853 12.3343 6.26766 12.3343C6.68232 12.3343 7.01852 11.9981 7.01852 11.5835V8.29291L11.249 10.0308V22.1289L2.1454 18.3891V6.29098ZM11.9999 1.56259L14.6028 2.6319L6.15794 6.31585L3.29365 5.13916L11.9999 1.56259ZM12.7507 10.0308L21.8543 6.29098V18.3891L12.7507 22.1289V10.0308Z"/>
@@ -77,7 +77,7 @@
                         <span class="">Produk</span>
                     </div>
                 </a>                    
-                <a href="./penjualan" class="left-nav__menu left-nav__menu--base">
+                <a href="/penjualan" class="left-nav__menu left-nav__menu--base">
                     <div class="left-nav__menu__title__container">
                         <svg class="nav__svg--md" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -131,7 +131,7 @@
                         </svg>      
                     </div>
                     <div class="left-nav__accordion__panel">
-                        <a href="./fb-ads.html" class="left-nav__menu left-nav__menu--small">
+                        <a href="/fb-ads.html" class="left-nav__menu left-nav__menu--small">
                             <span class="">Facebook Ads</span>
                         </a>
                         <a href="" class="left-nav__menu left-nav__menu--small">
