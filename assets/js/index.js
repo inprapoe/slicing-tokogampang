@@ -47,7 +47,7 @@ const useThisScripts = () => {
                 chevron.classList.toggle("left-nav__accordion--active__chevron")
             } 
         });
-        element.click()
+       
     }
 
     // LEFTNAV2ACTIVATOR
@@ -86,11 +86,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     element.removeAttribute('include-html')
                     includeHTML()
                     const content = document.getElementById("content")
+                    const leftNavAccordion = document.querySelectorAll(".left-nav__accordion")
                     if(content.innerHTML.length === 0) {
                         content.innerHTML += GeneralLayoutHtml 
                     }
+                    if(leftNavAccordion.length > 0) {
+                        leftNavAccordion.forEach(element => element.click())
+                    }
                     useThisScripts();
-                    toggleMobileCategory();
                 };
                 xhr.open('GET', file, true);
                 xhr.send();
