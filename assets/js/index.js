@@ -19,7 +19,8 @@ const toggleMobileCategory = () => {
 const useThisScripts = () => {
 
     const leftNavMenu = document.querySelectorAll(".left-nav__menu") 
-    const location = document.location.pathname.replace("/public", ".");
+    const location = document.location.pathname;
+    console.log(location);
     
     const leftNavMenuActivator = (menu) => {
         for (let i = 0; i < menu.length; i++) {
