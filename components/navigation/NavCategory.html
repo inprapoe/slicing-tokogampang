@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavCategory</title>
+</head>
+<body>
+    <div class="dropdown">
+        <span class="nav__menu">
+            Kategori
+            <svg class="dropdown__icon box box--6" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.94 6.22667L8 9.28L11.06 6.22667L12 7.16667L8 11.1667L4 7.16667L4.94 6.22667Z"/>
+            </svg>    
+            <a href="./categories.html" class="nav__menu__link"></a>                        
+        </span>
+        <div class="dropdown__content dropdown__content--category">
+            <div class="nav__categories">
+                <ul class="nav__categories__tabs">
+                    <span contentId="tab1" class="nav__tab nav__tab--active" >Tab1</span>
+                    <span contentId="tab2" class="nav__tab">Tab2</span>
+                    <span contentId="tab3" class="nav__tab">Tab3</span>
+                    <span contentId="tab4" class="nav__tab">Tab4</span>
+                    <span contentId="tab5" class="nav__tab">Tab5</span>
+                </ul>
+                <div class="dropdown__content__responsive">
+                    <ul class="nav__categories__contents">
+                        <li id="tab1" class="nav__categories__content tab__content tab__content--active">
+                            <div class="nav__categories__subcontent">
+                                <ul class="nav__categories__links">
+                                    <li class="">
+                                        <a href="" class="nav__main-link">Diskon</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="" class="nav__main-link">Sofa</a>
+                                    </li>
+                                    <li class="nav__links">
+                                        <a href="" class="nav__main-link">Ruang Keluarga</a>
+                                        <ul>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Kursi Aksen</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Kursi Berlengan</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Lemari Pajangan</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Meja Tertentu</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Rak dan penyimpanan</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__links">
+                                        <a href="" class="nav__main-link">Ruang Makan</a>
+                                        <ul>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Bangku Bar </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Kursi Makan</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Meja Makan</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Sideboard & Kabinet</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav__categories__links">
+                                    <li class="nav__links">
+                                        <a href="" class="nav__main-link">Kamar Tidur</a>
+                                        <ul>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Bingkai Tempat Tidur</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Kursi Kamar</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Meja</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Lemari</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Matras</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav__links">
+                                        <a href="" class="nav__main-link">Kantor</a>
+                                        <ul>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Meja</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Kursi Kantor</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Penyimpanan</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav__categories__links">
+                                    <li class="nav__links">
+                                        <a href="" class="nav__main-link">Top Brand</a>
+                                        <ul>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Olympic</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">West Elm</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Baker</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">Tempur</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="nav__sub-link">King Koil</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div include-html="./components/card/HighlightCategory.html" class="hidden col-span-2 highlight__container xl:flex" ></div>     
+                            </div>
+                        </li>
+                        <li id="tab2" class="tab__content">
+                            Tab2
+                        </li>
+                        <li id="tab3" class="tab__content">
+                            Tab3
+                        </li>
+                        <li id="tab4" class="tab__content">
+                            Tab4
+                        </li>
+                        <li id="tab5" class="tab__content">
+                            Tab5
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

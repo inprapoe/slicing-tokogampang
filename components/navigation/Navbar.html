@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+</head>
+<body>
+    <div class="nav__container">
+        <div class="nav__sub">
+            <a href="" class="link__text--primary">Tentang Tokogampang</a>
+            <a href="" class="link__text--primary">Pusat Edukasi</a>
+            <a href="" class="link__text--primary">Promo</a>
+            <a href="" class="link__text--primary">Tokogampang Care</a>
+        </div>
+        <div class="nav">
+            <div class="nav__left">
+                <div include-html="./components/navigation/NavCategory.html"></div>
+            </div>
+    
+            <!-- LOGO -->
+            <a href="./" class="nav__logo">
+                <img class="nav__logo__img" src="./assets/img/icons/logo.svg" alt="">
+            </a>
+    
+            <div class="nav__right">
+                <!-- TOMBOL SEARCH -->
+                <span onclick="toggleNavSearch()" class="nav__menu box box--8 btn btn--gray-lightest">
+                    <svg class="box box--6"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 13.9999H14.71L14.43 13.7299C15.63 12.3299 16.25 10.4199 15.91 8.38989C15.44 5.60989 13.12 3.38989 10.32 3.04989C6.09001 2.52989 2.53002 6.08989 3.05002 10.3199C3.39002 13.1199 5.61002 15.4399 8.39002 15.9099C10.42 16.2499 12.33 15.6299 13.73 14.4299L14 14.7099V15.4999L18.25 19.7499C18.66 20.1599 19.33 20.1599 19.74 19.7499C20.15 19.3399 20.15 18.6699 19.74 18.2599L15.5 13.9999ZM9.50002 13.9999C7.01002 13.9999 5.00002 11.9899 5.00002 9.49989C5.00002 7.00989 7.01002 4.99989 9.50002 4.99989C11.99 4.99989 14 7.00989 14 9.49989C14 11.9899 11.99 13.9999 9.50002 13.9999Z"/>
+                    </svg>                           
+                </span>
+
+                <!-- TOMBOL SHOP -->
+                <div class="hidden dropdown md:flex">
+                    <div class="" include-html="./components/navigation/NavAccount.html"></div>
+                </div>
+    
+                <!-- TOMBOL MENU -->
+                <span onclick="toggleMobileNav()" class="link__icon--primary md:hidden">
+                    <svg class="box box--8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div include-html="./components/navigation/NavSearch.html"></div>
+    </div>
+</body>
+</html>

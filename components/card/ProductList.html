@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List Card</title>
+  </head>
+  <body>
+    <!-- <div
+      class="grid gap-2 sm:gap-4 grid-cols-fill-36 sm:grid-cols-fill-44 md:grid-cols-fill-52"
+    > -->
+    <div
+      class="grid gap-2 sm:grid-cols-2 sm:gap-4"
+    >
+      <div class="card">
+        <div class="card__media">
+          <img
+            src="./assets/img/products/perlatan-makan.png"
+            class="card__img"
+            alt=""
+          />
+          <div class="card__overlay card__overlay--black-50">
+            <div class="ml-auto">
+              <button class="rounded-full btn btn--xs">
+                <svg
+                  class="w-3 md:w-5"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                    fill="#323133"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-auto">
+              <span class="badge badge--black">Stok Habis</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <span class="p-0 mb-2 badge badge--green badge--no-bg"
+            >Recomended</span
+          >
+          <h1 class="mb-2 text-sm lc-2l">Lorem ipsum dolor</h1>
+          <div class="mb-2">
+            <p class="font-bold lc-2l">Rp.14.500</p>
+            <p class="text-xs lc-2l">Komisi Rp.1000</p>
+          </div>
+          <div class="mb-2">
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.7619 8L14.9029 5.87429L15.1619 3.06286L12.4114 2.4381L10.9714 0L8.38095 1.11238L5.79048 0L4.35048 2.43048L1.6 3.04762L1.85905 5.86667L0 8L1.85905 10.1257L1.6 12.9448L4.35048 13.5695L5.79048 16L8.38095 14.88L10.9714 15.9924L12.4114 13.5619L15.1619 12.9371L14.9029 10.1257L16.7619 8ZM6.92571 11.5962L4.03048 8.69333L5.1581 7.56571L6.92571 9.34095L11.3829 4.86857L12.5105 5.99619L6.92571 11.5962Z"
+                  fill="#3A86FF"
+                />
+              </svg>
+              Makmur Jaya
+            </p>
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.99992 10.5134L11.1199 13L10.0266 8.31337L13.6666 5.16004L8.87325 4.75337L6.99992 0.333374L5.12659 4.75337L0.333252 5.16004L3.97325 8.31337L2.87992 13L6.99992 10.5134Z"
+                  fill="#FFDD4A"
+                />
+              </svg>
+
+              4.5
+            </p>
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="w-full btn btn--xs md:btn--sm btn--red">
+            + Tambah ke Toko
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media">
+          <img
+            src="./assets/img/products/perlatan-makan.png"
+            class="card__img"
+            alt=""
+          />
+          <div class="card__overlay card__overlay--black-50">
+            <div class="ml-auto">
+              <button class="rounded-full btn btn--xs">
+                <svg
+                  class="w-3 md:w-5"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                    fill="#323133"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-auto">
+              <span class="badge badge--black">Stok Habis</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h1 class="mb-2 text-sm lc-2l">Lorem ipsum dolor</h1>
+          <div class="mb-2">
+            <p class="font-bold lc-2l">Rp.1.200.000.000</p>
+            <p class="text-xs lc-2l">Komisi Rp.1.000.000</p>
+          </div>
+          <div class="mb-2">
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.7619 8L14.9029 5.87429L15.1619 3.06286L12.4114 2.4381L10.9714 0L8.38095 1.11238L5.79048 0L4.35048 2.43048L1.6 3.04762L1.85905 5.86667L0 8L1.85905 10.1257L1.6 12.9448L4.35048 13.5695L5.79048 16L8.38095 14.88L10.9714 15.9924L12.4114 13.5619L15.1619 12.9371L14.9029 10.1257L16.7619 8ZM6.92571 11.5962L4.03048 8.69333L5.1581 7.56571L6.92571 9.34095L11.3829 4.86857L12.5105 5.99619L6.92571 11.5962Z"
+                  fill="#3A86FF"
+                />
+              </svg>
+              Makmur Jaya
+            </p>
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.99992 10.5134L11.1199 13L10.0266 8.31337L13.6666 5.16004L8.87325 4.75337L6.99992 0.333374L5.12659 4.75337L0.333252 5.16004L3.97325 8.31337L2.87992 13L6.99992 10.5134Z"
+                  fill="#FFDD4A"
+                />
+              </svg>
+
+              4.5
+            </p>
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="w-full btn btn--xs md:btn--sm btn--red">
+            + Tambah ke Toko
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media">
+          <img
+            src="./assets/img/products/perlatan-makan.png"
+            class="card__img"
+            alt=""
+          />
+          <div class="card__overlay card__overlay--black-50">
+            <div class="ml-auto">
+              <button class="rounded-full btn btn--xs">
+                <svg
+                  class="w-3 md:w-5"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                    fill="#323133"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-auto">
+              <span class="badge badge--black">Stok Habis</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <span class="mb-2 badge badge--green badge--no-bg">Recomended</span>
+          <h1 class="mb-2 text-sm lc-2l">Lorem ipsum dolor</h1>
+          <div class="mb-2">
+            <p class="font-bold lc-2l">Rp.14.500</p>
+            <p class="text-xs lc-2l">Komisi Rp.1000</p>
+          </div>
+          <div class="mb-2">
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.7619 8L14.9029 5.87429L15.1619 3.06286L12.4114 2.4381L10.9714 0L8.38095 1.11238L5.79048 0L4.35048 2.43048L1.6 3.04762L1.85905 5.86667L0 8L1.85905 10.1257L1.6 12.9448L4.35048 13.5695L5.79048 16L8.38095 14.88L10.9714 15.9924L12.4114 13.5619L15.1619 12.9371L14.9029 10.1257L16.7619 8ZM6.92571 11.5962L4.03048 8.69333L5.1581 7.56571L6.92571 9.34095L11.3829 4.86857L12.5105 5.99619L6.92571 11.5962Z"
+                  fill="#3A86FF"
+                />
+              </svg>
+              Makmur Jaya
+            </p>
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.99992 10.5134L11.1199 13L10.0266 8.31337L13.6666 5.16004L8.87325 4.75337L6.99992 0.333374L5.12659 4.75337L0.333252 5.16004L3.97325 8.31337L2.87992 13L6.99992 10.5134Z"
+                  fill="#FFDD4A"
+                />
+              </svg>
+
+              4.5
+            </p>
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="w-full btn btn--xs md:btn--sm btn--red">
+            + Tambah ke Toko
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media">
+          <img
+            src="./assets/img/products/perlatan-makan.png"
+            class="card__img"
+            alt=""
+          />
+          <div class="card__overlay card__overlay--black-50">
+            <div class="ml-auto">
+              <button class="rounded-full btn btn--xs">
+                <svg
+                  class="w-3 md:w-5"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                    fill="#323133"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-auto">
+              <span class="badge badge--black">Stok Habis</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <span class="p-0 mb-2 badge badge--green badge--no-bg"
+            >Recomended</span
+          >
+          <h1 class="mb-2 text-sm lc-2l">Lorem ipsum dolor</h1>
+          <div class="mb-2">
+            <p class="font-bold lc-2l">Rp.14.500</p>
+            <p class="text-xs lc-2l">Komisi Rp.1000</p>
+          </div>
+          <div class="mb-2">
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.7619 8L14.9029 5.87429L15.1619 3.06286L12.4114 2.4381L10.9714 0L8.38095 1.11238L5.79048 0L4.35048 2.43048L1.6 3.04762L1.85905 5.86667L0 8L1.85905 10.1257L1.6 12.9448L4.35048 13.5695L5.79048 16L8.38095 14.88L10.9714 15.9924L12.4114 13.5619L15.1619 12.9371L14.9029 10.1257L16.7619 8ZM6.92571 11.5962L4.03048 8.69333L5.1581 7.56571L6.92571 9.34095L11.3829 4.86857L12.5105 5.99619L6.92571 11.5962Z"
+                  fill="#3A86FF"
+                />
+              </svg>
+              Makmur Jaya
+            </p>
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.99992 10.5134L11.1199 13L10.0266 8.31337L13.6666 5.16004L8.87325 4.75337L6.99992 0.333374L5.12659 4.75337L0.333252 5.16004L3.97325 8.31337L2.87992 13L6.99992 10.5134Z"
+                  fill="#FFDD4A"
+                />
+              </svg>
+
+              4.5
+            </p>
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="w-full btn btn--xs md:btn--sm btn--red">
+            + Tambah ke Toko
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media">
+          <img
+            src="./assets/img/products/perlatan-makan.png"
+            class="card__img"
+            alt=""
+          />
+          <div class="card__overlay card__overlay--black-50">
+            <div class="ml-auto">
+              <button class="rounded-full btn btn--xs">
+                <svg
+                  class="w-3 md:w-5"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                    fill="#323133"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-auto">
+              <span class="badge badge--black">Stok Habis</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h1 class="mb-2 text-sm lc-2l">Lorem ipsum dolor</h1>
+          <div class="mb-2">
+            <p class="font-bold lc-2l">Rp.1.200.000.000</p>
+            <p class="text-xs lc-2l">Komisi Rp.1.000.000</p>
+          </div>
+          <div class="mb-2">
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.7619 8L14.9029 5.87429L15.1619 3.06286L12.4114 2.4381L10.9714 0L8.38095 1.11238L5.79048 0L4.35048 2.43048L1.6 3.04762L1.85905 5.86667L0 8L1.85905 10.1257L1.6 12.9448L4.35048 13.5695L5.79048 16L8.38095 14.88L10.9714 15.9924L12.4114 13.5619L15.1619 12.9371L14.9029 10.1257L16.7619 8ZM6.92571 11.5962L4.03048 8.69333L5.1581 7.56571L6.92571 9.34095L11.3829 4.86857L12.5105 5.99619L6.92571 11.5962Z"
+                  fill="#3A86FF"
+                />
+              </svg>
+              Makmur Jaya
+            </p>
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.99992 10.5134L11.1199 13L10.0266 8.31337L13.6666 5.16004L8.87325 4.75337L6.99992 0.333374L5.12659 4.75337L0.333252 5.16004L3.97325 8.31337L2.87992 13L6.99992 10.5134Z"
+                  fill="#FFDD4A"
+                />
+              </svg>
+
+              4.5
+            </p>
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="w-full btn btn--xs md:btn--sm btn--red">
+            + Tambah ke Toko
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media">
+          <img
+            src="./assets/img/products/perlatan-makan.png"
+            class="card__img"
+            alt=""
+          />
+          <div class="card__overlay card__overlay--black-50">
+            <div class="ml-auto">
+              <button class="rounded-full btn btn--xs">
+                <svg
+                  class="w-3 md:w-5"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                    fill="#323133"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-auto">
+              <span class="badge badge--black">Stok Habis</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <span class="mb-2 badge badge--green badge--no-bg">Recomended</span>
+          <h1 class="mb-2 text-sm lc-2l">Lorem ipsum dolor</h1>
+          <div class="mb-2">
+            <p class="font-bold lc-2l">Rp.14.500</p>
+            <p class="text-xs lc-2l">Komisi Rp.1000</p>
+          </div>
+          <div class="mb-2">
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.7619 8L14.9029 5.87429L15.1619 3.06286L12.4114 2.4381L10.9714 0L8.38095 1.11238L5.79048 0L4.35048 2.43048L1.6 3.04762L1.85905 5.86667L0 8L1.85905 10.1257L1.6 12.9448L4.35048 13.5695L5.79048 16L8.38095 14.88L10.9714 15.9924L12.4114 13.5619L15.1619 12.9371L14.9029 10.1257L16.7619 8ZM6.92571 11.5962L4.03048 8.69333L5.1581 7.56571L6.92571 9.34095L11.3829 4.86857L12.5105 5.99619L6.92571 11.5962Z"
+                  fill="#3A86FF"
+                />
+              </svg>
+              Makmur Jaya
+            </p>
+            <p class="flex text-xs">
+              <svg
+                class="w-4 mr-1"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.99992 10.5134L11.1199 13L10.0266 8.31337L13.6666 5.16004L8.87325 4.75337L6.99992 0.333374L5.12659 4.75337L0.333252 5.16004L3.97325 8.31337L2.87992 13L6.99992 10.5134Z"
+                  fill="#FFDD4A"
+                />
+              </svg>
+
+              4.5
+            </p>
+          </div>
+        </div>
+        <div class="card__footer">
+          <div class="w-full btn btn--xs md:btn--sm btn--red">
+            + Tambah ke Toko
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
