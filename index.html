@@ -6,21 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokogampang</title>
     <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <div id="GeneralLayout" include-html="./layout/GeneralLayout.html">
-        <div class="min-h-screen pt-16 md:pt-24">
-            <div class="banner pt-60p md:pt-50p lg:pt-40p ">
-                <img class="absolute absolute--full absolute__img" src="./assets/img/banners/product.png" alt="">
-                <div class="absolute absolute--full absolute--center responsive">
-                    <h1 class="text-center text-white text-2xl--bold sm:text-3xl md:text-5xl lg:text-6xl md:leading-normal">Selamat Datang di <br> Tokogampang</h1>
-                </div>
+    <div id="loading" class="loading">
+        <img class="nav__logo__img animate-bounce" src="./assets/img/icons/logo_white.svg" alt="">
+    </div>
+    <!-- NAVBAR -->
+    <nav include-html="./components/navigation/Navbar.html"></nav>
+
+    <!-- MOBILE -->
+    <div class="mobile-nav__container">    
+        <div include-html="./components/navigation/MobileNav.html"></div>
+        <div include-html="./components/navigation/MobileCategory.html"></div>
+    </div>
+
+    <!-- OVERLAY BUAT MENU -->
+    <div class="black-overlay" onclick="toggleMobileNav('close')"></div>
+
+    <!-- CONTENT -->
+    <div class="min-h-screen pt-16 md:pt-24">
+        <div class="banner ">
+            <img class="absolute absolute--full absolute__img" src="./assets/img/banners/product.png" alt="">
+            <div class="absolute absolute--full absolute--center responsive">
+                <h1 data-aos="fade-up" class="banner__title">Selamat Datang di <br> Tokogampang</h1>
             </div>
-            <div class="py-5 md:py-10 lg:py-20">
-               <div include-html="./components/card/TopCategories.html"></div>
-            </div>         
         </div>
-    </div>    
+        <div class="content__main">
+           <div include-html="./components/card/TopCategories.html"></div>
+           <div product="Produk Terpopuler" include-html="./components/card/ProductList.html"></div>
+           <div product="Produk Terlaris" include-html="./components/card/ProductList.html"></div>
+           <div include-html="./components/card/Promotions.html"></div>           
+           <div product="Produk Terbaru" include-html="./components/card/ProductList.html"></div>
+           <div include-html="./components/card/Jumbotron.html"></div>           
+           <div product="Produk Recomended" include-html="./components/card/ProductListNoSlide.html"></div>
+        </div>         
+    </div>  
+
+    <!-- FOOTER -->
+    <div include-html="./components/navigation/Footer.html"></div>
+
+    <!-- MODAL  -->
+    <div include-html="./components/modal/ShareModal.html"></div>
+   
     <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

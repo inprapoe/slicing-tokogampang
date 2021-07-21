@@ -62,6 +62,8 @@ const outFunc = () => {
 
 
 const useThisScripts = () => {
+    AOS.init();
+
 
     // LEFTNAV MENU
     const leftNavMenu = document.querySelectorAll(".left-nav__menu");
@@ -134,8 +136,9 @@ const useThisScripts = () => {
 
     const loading = document.getElementById('loading');
     loading.style.height = 0;
-    document.body.style.overflowY = '';
+    body.style.overflowY = "auto";
 
+  
     
 }
 
@@ -144,9 +147,9 @@ const useThisScripts = () => {
 body.style.overflowY = "hidden";
 
 const includeHTML = () => {
-    let z = document.getElementsByTagName("*");
-    for (let i = 0; i < z.length; i++) {
-        const element = z[i];
+    let tagname = document.getElementsByTagName("*");
+    for (let i = 0; i < tagname.length; i++) {
+        const element = tagname[i];
         let file = element.getAttribute('include-html');
         if(file) {
             const elementInnerHTML = element.innerHTML;
@@ -161,6 +164,11 @@ const includeHTML = () => {
                     const elementContent = element.getElementsByTagName("content")[0];                   
                     if(elementContent) {
                         elementContent.innerHTML += elementInnerHTML ;
+                    }
+                    const productHeaderToPass = element.getAttribute("product");
+                    let productHeader = element.getElementsByClassName('product__header')[0];
+                    if(productHeader) {
+                        productHeader.innerHTML = productHeaderToPass
                     }
                 })
         }     
