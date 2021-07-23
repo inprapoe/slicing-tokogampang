@@ -62,8 +62,6 @@ const outFunc = () => {
 
 
 const useThisScripts = () => {
-    AOS.init();
-
 
     // LEFTNAV MENU
     const leftNavMenu = document.querySelectorAll(".left-nav__menu");
@@ -134,52 +132,61 @@ const useThisScripts = () => {
     }
     activateTabs(NavTabs, "nav__tab--active", "tab__content--active")
 
+    // LOADING
     const loading = document.getElementById('loading');
     loading.style.height = 0;
     body.style.overflowY = "auto";
 
-  
-    
-}
+    // PRODUCT productCAROUSEL
+    const productCarousels = document.querySelectorAll('.product-carousel')
+    for (let i = 0; i < productCarousels.length; i++) {
+        $(document).ready(function(){
+            const productCarousel = productCarousels[i];
+            const productCarouselPrev = productCarousel.parentElement.querySelector('.prev')
+            const productCarouselNext = productCarousel.parentElement.querySelector('.next');
+            $(productCarousel).slick({
+                infinite: false,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                prevArrow: $(productCarouselPrev),
+                nextArrow: $(productCarouselNext),
+                responsive: [
+                    {
+                      breakpoint: 1440,
+                      settings: {
+                        slidesToShow: 6,
+                        dots:false,
+                      }
+                    },
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        slidesToShow: 4,
+                        dots: true,
+                      }
+                    },
+                    {
+                      breakpoint: 640,
+                      settings: {
+                        slidesToShow: 3,
+                        dots: true,
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 2,
+                        dots: true,
+                      }
+                    },
 
-// DONT USE THIS SCRIPT
-
-body.style.overflowY = "hidden";
-
-const includeHTML = () => {
-    let tagname = document.getElementsByTagName("*");
-    for (let i = 0; i < tagname.length; i++) {
-        const element = tagname[i];
-        let file = element.getAttribute('include-html');
-        if(file) {
-            const elementInnerHTML = element.innerHTML;
-            fetch(file)
-                .then(x => x.text())
-                .then(data => {
-                    const parser = new DOMParser();
-                    const bodyHTML = parser.parseFromString(data, 'text/html').body.innerHTML; 
-                    element.innerHTML = bodyHTML;
-                    element.removeAttribute('include-html');
-                    includeHTML();
-                    const elementContent = element.getElementsByTagName("content")[0];                   
-                    if(elementContent) {
-                        elementContent.innerHTML += elementInnerHTML ;
-                    }
-                    const productHeaderToPass = element.getAttribute("product");
-                    let productHeader = element.getElementsByClassName('product__header')[0];
-                    if(productHeader) {
-                        productHeader.innerHTML = productHeaderToPass
-                    }
-                })
-        }     
-    }  
-    return document.body.innerHTML;
-}
-
-Promise.all([
-    includeHTML()
-]).then((data) => {
-    window.onload = () => {
-        setTimeout(function(){ useThisScripts(); console.log('done');}, 1500);
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+            });
+        });
     }
-});
+}
+
+

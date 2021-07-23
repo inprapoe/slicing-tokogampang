@@ -7,26 +7,27 @@
     <title>GeneralLayout</title>
 </head>
 <body>
-    <div id="loading" class="loading">
-        <img class="nav__logo__img animate-bounce" src="./assets/img/icons/logo_white.svg" alt="">
+    <div class="">
+        <div id="loading" class="loading">
+            <img class="nav__logo__img animate-bounce" src="./assets/img/icons/logo_white.svg" alt="">
+        </div>
+        <!-- NAVBAR -->
+        <nav include-html="./components/navigation/Navbar.html"></nav>
+
+        <!-- MOBILE -->
+        <div include-html="./components/navigation/MobileNavContainer.html"></div>
+
+        <!-- OVERLAY BUAT MENU -->
+        <div class="black-overlay" onclick="toggleMobileNav('close')"></div>
+
+        <!-- PLACEHOLDER BUAT CONTENT -->
+        <content></content>
+
+        <!-- FOOTER -->
+        <div include-html="./components/navigation/Footer.html"></div>
+
+        <!-- MODAL  -->
+        <div include-html="./components/modal/ShareModal.html"></div>
     </div>
-    <!-- NAVBAR -->
-    <nav include-html="./components/navigation/Navbar.html"></nav>
-
-    <!-- MOBILE -->
-    <div include-html="./components/navigation/MobileNavContainer.html"></div>
-    <!-- <div include-html="./components/navigation/MobileCategory"></div> -->
-
-    <!-- OVERLAY BUAT MENU -->
-    <div class="black-overlay" onclick="toggleMobileNav('close')"></div>
-
-    <!-- PLACEHOLDER BUAT CONTENT -->
-    <content></content>
-
-    <!-- FOOTER -->
-    <div include-html="./components/navigation/Footer.html"></div>
-
-    <!-- MODAL  -->
-    <div include-html="./components/modal/ShareModal.html"></div>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokogampang</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="loading" class="loading">
+        <img class="nav__logo__img animate-bounce" src="./assets/img/icons/logo_white.svg" alt="">
+    </div>
+    <!-- NAVBAR -->
+    <nav include-html="./components/navigation/Navbar.html"></nav>
+
+    <!-- MOBILE -->
+    <div class="mobile-nav__container">    
+        <div include-html="./components/navigation/MobileNav.html"></div>
+        <div include-html="./components/navigation/MobileCategory.html"></div>
+    </div>
+
+    <!-- OVERLAY BUAT MENU -->
+    <div class="black-overlay" onclick="toggleMobileNav('close')"></div>
+
+    <!-- CONTENT -->
+    <div class="min-h-screen pt-16 md:pt-24">
+        <div include-html="./components/banner/MainBanner.html">
+            <h1 data-aos="fade-up" class="banner__title">Selamat Datang di <br> Tokogampang</h1>
+        </div>
+        <div class="content__main">
+           <div include-html="./components/card/ProductListNoTitle.html"></div>
+           <div include-html="./components/other/LoadMore.html"></div>           
+        </div>         
+    </div>  
+
+    <!-- FOOTER -->
+    <div include-html="./components/navigation/Footer.html"></div>
+
+    <!-- MODAL  -->
+    <div include-html="./components/modal/ShareModal.html"></div>
+   
+    <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
