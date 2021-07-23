@@ -162,18 +162,18 @@ const useThisScripts = () => {
                       breakpoint: 1024,
                       settings: {
                         slidesToShow: 4,
-                        dots: true,
+                        dots:false,
                       }
                     },
                     {
-                      breakpoint: 640,
+                      breakpoint: 768,
                       settings: {
                         slidesToShow: 3,
                         dots: true,
                       }
                     },
                     {
-                      breakpoint: 480,
+                      breakpoint: 640,
                       settings: {
                         slidesToShow: 2,
                         dots: true,

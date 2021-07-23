@@ -10,39 +10,32 @@
 
 </head>
 <body>
-    <div id="loading" class="loading">
-        <img class="nav__logo__img animate-bounce" src="./assets/img/icons/logo_white.svg" alt="">
-    </div>
-    <!-- NAVBAR -->
-    <nav include-html="./components/navigation/Navbar.html"></nav>
-
-    <!-- MOBILE -->
-    <div class="mobile-nav__container">    
-        <div include-html="./components/navigation/MobileNav.html"></div>
-        <div include-html="./components/navigation/MobileCategory.html"></div>
-    </div>
-
-    <!-- OVERLAY BUAT MENU -->
-    <div class="black-overlay" onclick="toggleMobileNav('close')"></div>
-
-    <!-- CONTENT -->
-    <div class="min-h-screen pt-16 md:pt-24">
-        <div include-html="./components/banner/MainBanner.html">
-            <h1 data-aos="fade-up" class="banner__title">Selamat Datang di <br> Tokogampang</h1>
+    <div class="" include-html="./layout/GeneralLayout.html">
+        <div class="min-h-screen pt-16 md:pt-24">
+            <div include-html="./components/banner/MainBanner.html">
+                <h1 class="banner__title">Selamat Datang di <br> Tokogampang</h1>
+            </div>
+            <div  class="content__main responsive">       
+                <div product="Produk Recomended" include-html="./components/card/ProductListNoTitle.html"></div>
+            </div>         
         </div>
-        <div class="content__main">
-           <div include-html="./components/card/ProductListNoTitle.html"></div>
-           <div include-html="./components/other/LoadMore.html"></div>           
-        </div>         
-    </div>  
+    </div> 
 
-    <!-- FOOTER -->
-    <div include-html="./components/navigation/Footer.html"></div>
+    
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="./assets/plugin/slick/slick.min.js"></script>
 
-    <!-- MODAL  -->
-    <div include-html="./components/modal/ShareModal.html"></div>
-   
+    <!-- JS UTAMA -->
     <script src="./assets/js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!------------------------------------------------- TIDAK USAH DIPAKAI --------------------------------------->
+    <script src="./assets/js/dontUseThisScript.js"></script>
+    <script>
+        Promise.all([
+            includeHTML()
+        ]).then((data) => {
+            window.onload = () => {setTimeout(function(){ useThisScripts(); console.log('done');}, 1500);}
+        });
+    </script>
 </body>
 </html>
