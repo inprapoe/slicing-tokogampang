@@ -34,3 +34,9 @@ const includeHTML = () => {
     }  
     return document.body.innerHTML;
 }
+
+Promise.all([
+    includeHTML()
+]).then((data) => {
+    window.onload = () => {setTimeout(function(){ useThisScripts(); console.log('done');}, 1500);}
+});

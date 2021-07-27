@@ -61,6 +61,32 @@ const outFunc = () => {
 }
 
 
+// FILTER
+const filterActiveClass = 'filter--active'
+
+const closeFilter = () => {
+    const activeFilter = document.querySelectorAll(`.${filterActiveClass}`);
+    for (let i = 0; i < activeFilter.length; i++) {
+        activeFilter[i].classList.remove(filterActiveClass);      
+    }
+}
+const toggleFilter = (element) => {
+    const filter = element.nextElementSibling;
+    if(filter.classList.contains(filterActiveClass)){
+        filter.classList.remove(filterActiveClass);
+    } else {
+        closeFilter();
+        filter.classList.add(filterActiveClass);
+    }
+}
+
+window.onclick = (event) => {
+    if(event.target.parentElement === null || !event.target.parentElement.classList.contains('filter__btn')){
+        closeFilter();
+    }
+}
+
+
 const useThisScripts = () => {
 
     // LEFTNAV MENU
@@ -132,10 +158,11 @@ const useThisScripts = () => {
     }
     activateTabs(NavTabs, "nav__tab--active", "tab__content--active")
 
+
     // LOADING
     const loading = document.getElementById('loading');
     loading.style.height = 0;
-    body.style.overflowY = "auto";
+    body.style.overflowY = "";
 
     // PRODUCT productCAROUSEL
     const productCarousels = document.querySelectorAll('.product-carousel')
@@ -187,6 +214,8 @@ const useThisScripts = () => {
             });
         });
     }
+
+
 }
 
 

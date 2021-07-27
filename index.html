@@ -5,43 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokogampang</title>
-    <link rel="stylesheet" href="./assets/plugin/slick/slick.css">
-    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/plugin/slick/slick.css">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
 </head>
 <body>
-    <div class="" include-html="./layout/GeneralLayout.html">
-        <div class="min-h-screen pt-16 md:pt-24">
-            <div include-html="./components/banner/MainBanner.html">
+    <div class="" include-html="/layout/GeneralLayout.html">
+        <div class="content">
+            <div include-html="/components/banner/MainBanner.html">
                 <h1 class="banner__title">Selamat Datang di <br> Tokogampang</h1>
             </div>
             <div  class="content__main">
-                <div include-html="./components/card/TopCategories.html"></div>            
-                <div product="Produk Terpopuler" include-html="./components/card/ProductListCarousel.html"></div>
-                <div product="Produk Terlaris" include-html="./components/card/ProductListCarousel.html"></div>
-                <div include-html="./components/card/Promotions.html"></div>           
-                <div product="Produk Terbaru" include-html="./components/card/ProductListCarousel.html"></div>
-                <div include-html="./components/card/Jumbotron.html"></div>           
-                <div product="Produk Recomended" include-html="./components/card/ProductListNoSlide.html"></div>
-                <div include-html="./components/other/LoadMore.html"></div>           
+                <div include-html="/components/card/TopCategories.html"></div>            
+                <div product="Produk Terpopuler" include-html="/components/card/ProductListCarousel.html"></div>
+                <div product="Produk Terlaris" include-html="/components/card/ProductListCarousel.html"></div>
+                <div include-html="/components/card/Promotions.html"></div>           
+                <div product="Produk Terbaru" include-html="/components/card/ProductListCarousel.html"></div>
+                <div include-html="/components/card/Jumbotron.html"></div>           
+                <div product="Produk Recomended" include-html="/components/card/ProductListNoSlide.html"></div>
+                <div include-html="/components/other/LoadMore.html"></div>           
             </div>         
         </div>
     </div> 
 
     
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="./assets/plugin/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="/assets/plugin/slick/slick.min.js"></script>
 
     <!-- JS UTAMA -->
-    <script src="./assets/js/index.js"></script>
+    <script src="/assets/js/index.js"></script>
 
     <!------------------------------------------------- TIDAK USAH DIPAKAI --------------------------------------->
-    <script src="./assets/js/dontUseThisScript.js"></script>
-    <script>
-        Promise.all([
-            includeHTML()
-        ]).then((data) => {
-            window.onload = () => {setTimeout(function(){ useThisScripts(); console.log('done');}, 1500);}
-        });
-    </script>
+    <script src="/assets/js/dontUseThisScript.js"></script>
 </body>
 </html>

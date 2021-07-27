@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BannerFilter</title>
+</head>
+<body>
+    <div class="banner__filters">
+        <div class="filter__container">
+            <button class="filter__btn" onclick="toggleFilter(this)">
+                <div class="icon-text-1">
+                    <svg class="box box--4" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-n</title><path d="M472,168H40a24,24,0,0,1,0-48H472a24,24,0,0,1,0,48Z"/><path d="M392,280H120a24,24,0,0,1,0-48H392a24,24,0,0,1,0,48Z"/><path d="M296,392H216a24,24,0,0,1,0-48h80a24,24,0,0,1,0,48Z"/></svg>                           
+                    <span>Filter</span>
+                </div>
+                <div class="absolute inset-0"></div>
+            </button>
+            <div class="filter">
+                <div class="mobile-nav__title md:hidden">
+                    <h2 class="mobile-nav__title__text">Filter</h2>
+                    <span class="link__icon--primary" onclick="closeFilter()">
+                        <svg class="box box--6" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" />
+                        </svg>                
+                    </span>
+                </div>
+                <ul class="filter__list">
+                    <li class="btn btn--sm btn--filter btn--filter--active">Alat Makan</li> 
+                    <li class="btn btn--sm btn--filter">Komputer</li> 
+                    <li class="btn btn--sm btn--filter">Handphone</li> 
+                    <li class="btn btn--sm btn--filter">Otomotif</li> 
+                </ul>
+                <div class="filter__footer">
+                    <div class="divider-line"></div>
+                    <div class="w-full px-4 py-2">
+                        <button class="w-full text-sm btn btn-sm btn--md btn--red">Tampilkan (5) Produk</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="filter__container">
+            <button class="filter__btn" onclick="toggleFilter(this)">
+                <div class="icon-text-1">
+                    <svg class="box box--4" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-b</title><polyline points="464 208 352 96 240 208" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="352" y1="113.13" x2="352" y2="416" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><polyline points="48 304 160 416 272 304" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="160" y1="398" x2="160" y2="96" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+                    <span>Urutkan</span>
+                </div>
+                <div class="absolute inset-0"></div>
+            </button>
+            <div class="filter">
+                <div class="mobile-nav__title md:hidden">
+                    <h2 class="mobile-nav__title__text">Urutkan</h2>
+                    <span class="link__icon--primary" onclick="closeFilter()">
+                        <svg class="box box--6" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" />
+                        </svg>                
+                    </span>
+                </div>
+                <ul class="filter__list">
+                    <li class="btn btn--sm btn--filter btn--filter--active">Paling Sesuai</li> 
+                    <li class="btn btn--sm btn--filter">Komisi Tertinggi</li> 
+                    <li class="btn btn--sm btn--filter">Komisi Terendah</li> 
+                    <li class="btn btn--sm btn--filter">Terlaris</li> 
+                    <li class="btn btn--sm btn--filter">Terbaru</li> 
+                </ul>
+                <div class="filter__footer">
+                    <div class="divider-line"></div>
+                    <div class="w-full px-4 py-2">
+                        <button class="w-full text-sm btn btn-sm btn--md btn--red">Tampilkan (5) Produk</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>    
+</body>
+</html>
